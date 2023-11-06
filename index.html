@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./src/dist/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>index</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./images/app-logo.png" alt="MyQuest-logo" class="app-icon" />
+        <p class="app-title">MyQuests</p>
+      </header>
+      <div class="content">
+        <div class="task-manager">
+          <section class="newTaskInfo">
+            <label for="task-name">Nome da tarefa:</label>
+            <input type="text" id="task-name" />
+          </section>
+          <section class="newTaskInfo">
+            <label for="task-description" type="textarea"
+              >Descrição da tarefa:</label
+            >
+            <textarea type="text" id="task-description"></textarea>
+          </section>
+          <button class="save-task">Adicionar tarefa</button>
+        </div>
+        <div class="tasks">
+          <span class="task-card">
+            <section class="task-secondary-camp">
+              <h1 class="task-title">Levar o lixo fora</h1>
+              <p class="task-description">
+                Pegar todos os lixos da casa e jogar fora
+              </p>
+            </section>
+            <img src="./images/bin.png" alt="bin-icon" class="bin-icon" />
+          </span>
+          <span class="task-card">
+            <section class="task-secondary-camp">
+              <h1 class="task-title">Passear com o cachorro</h1>
+              <p class="task-description">
+                Levar o cachorro para brincar no parque
+              </p>
+            </section>
+            <img src="./images/bin.png" alt="bin-icon" class="bin-icon" />
+          </span>
+        </div>
+      </div>
+      <footer class="footer">
+        Made with
+        <img src="./images/heart.png" alt="heart-icon" class="heart-icon" /> by
+        LucasPio
+      </footer>
+    </div>
+  </body>
+</html>

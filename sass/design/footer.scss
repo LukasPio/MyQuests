@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
+  width: 100%;
+  background-color: $secondary-background-color;
+  text-align: center;
+  color: $primary-font-color;
+}
+
+.heart-icon {
+  width: 20px;
+  padding: 0 3px;
+}

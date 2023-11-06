@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
+  width: 100%;
+  background-color: #322e2e;
+  text-align: center;
+  color: #999999;
+}
+
+.heart-icon {
+  width: 20px;
+  padding: 0 3px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  background-color: #322e2e;
+}
+
+.app-icon {
+  width: 70px;
+  height: auto;
+}
+
+.app-title {
+  font-size: 25px;
+  color: #999999;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  margin-top: 3%;
+}
+
+.task-manager {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.newTaskInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+#task-name {
+  background-color: transparent;
+  border: solid #40404b 2px;
+  width: 250px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#task-name:focus {
+  outline: none;
+}
+
+#task-description {
+  background-color: transparent;
+  border: solid #40404b 2px;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 70px;
+  resize: none;
+}
+#task-description:focus {
+  outline: none;
+}
+
+.task-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.task-description {
+  font-size: 16px;
+}
+
+.tasks {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 4%;
+}
+
+.task-card {
+  background-color: #322e2e;
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.save-task {
+  width: 100px;
+  height: 50px;
+  margin-top: 23px;
+  transition: 0.4s;
+  border-radius: 5px;
+  background-color: transparent;
+  border: solid #40404b 2px;
+  font-size: 18px;
+  min-width: 180px;
+}
+.save-task:hover {
+  filter: brightness(1.1);
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.bin-icon {
+  width: 20%;
+  height: auto;
+  transition: 0.6s;
+}
+.bin-icon:hover {
+  filter: brightness(1.2);
+  scale: 1.1;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #393434;
+}
+
+@media (max-width: 1000px) {
+  .tasks {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 585px) {
+  .task-manager {
+    gap: 35px;
+  }
+  .save-task {
+    width: 140px;
+    font-size: 18px;
+    margin: 0 100px 10px 109px;
+  }
+}
+@media (max-width: 490px) {
+  .task-card {
+    width: 370px;
+  }
+  .task-title {
+    font-size: 20px;
+  }
+  .task-description {
+    font-size: 12px;
+  }
+  .app-title {
+    font-size: 20px;
+  }
+  .app-icon {
+    width: 60px;
+  }
+}
+@media (max-width: 390px) {
+  .task-card {
+    width: 250px;
+  }
+  .task-title {
+    font-size: 20px;
+  }
+  .task-description {
+    font-size: 12px;
+  }
+  #task-description {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

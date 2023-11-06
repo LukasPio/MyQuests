@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import "./colors/colors.scss";
+@import "./design/footer";
+@import "./design/header";
+@import "./design/content";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #393434;
+}
+
+
+@media (max-width: 1000px) {
+  .tasks {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 585px) {
+
+  .task-manager {
+    gap: 35px;
+  }
+  .save-task {
+    width: 140px;
+    font-size: 18px;
+    margin: 0 100px 10px 109px;
+  }
+}
+
+@media (max-width: 490px) {
+  .task-card {
+    width: 370px;
+  }
+  .task-title {
+    font-size: 20px;
+  }
+  .task-description {
+    font-size: 12px;
+  }
+  .app-title {
+    font-size: 20px;
+  }
+  .app-icon {
+    width: 60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .task-card {
+    width: 250px;
+  }
+  .task-title {
+    font-size: 20px;
+  }
+  .task-description {
+    font-size: 12px;
+  }
+  #task-description {
+    width: 200px;
+  }
+}

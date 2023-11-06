@@ -1,0 +1,102 @@
+@mixin input-style($background-color, $border, $width, $font-size) {
+  background-color: $background-color;
+  border: $border;
+  width: $width;
+  font-size: $font-size;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+  }
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  margin-top: 3%;
+}
+
+.task-manager {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.newTaskInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+#task-name {
+  @include input-style(transparent, solid #40404b 2px, 250px, 20px);
+}
+
+#task-description {
+  @include input-style(transparent, solid #40404b 2px, 300px, 15px);
+  height: 70px;
+  resize: none;
+}
+
+.task-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.task-description {
+  font-size: 16px;
+}
+
+.tasks {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 4%;
+}
+
+.task-card {
+  background-color: $secondary-background-color;
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.save-task {
+  width: 100px;
+  height: 50px;
+  margin-top: 23px;
+  transition: 0.4s;
+  border-radius: 5px;
+  background-color: transparent;
+  border: solid #40404b 2px;
+  font-size: 18px;
+  min-width: 180px;
+
+  &:hover {
+    filter: brightness(1.1);
+    scale: (1.1);
+    cursor: pointer;
+  }
+}
+
+.bin-icon {
+  width: 20%;
+  height: auto;
+  transition: 0.6s;
+
+  &:hover {
+    filter: brightness(1.2);
+    scale: (1.1);
+    cursor: pointer;
+  }
+}
