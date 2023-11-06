@@ -20,6 +20,9 @@ function newTask(): Task {
     throw new Error("Two camps must be completed!");
   }
 
+  document.querySelector("#task-description").textContent = "";
+  document.querySelector("#task-name").textContent = "";
+  alert("Tarefa adicionada!");
   localStorage.setItem("task" + localStorage.length, JSON.stringify(newTask));
   return newTask;
 }
