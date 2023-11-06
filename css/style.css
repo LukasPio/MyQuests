@@ -65,6 +65,7 @@
   font-size: 20px;
   border-radius: 5px;
   padding: 5px;
+  color: #e5e4e4;
 }
 #task-name:focus {
   outline: none;
@@ -77,6 +78,7 @@
   font-size: 15px;
   border-radius: 5px;
   padding: 5px;
+  color: #e5e4e4;
   height: 70px;
   resize: none;
 }
@@ -85,12 +87,14 @@
 }
 
 .task-title {
+  color: #e5e4e4;
   margin-bottom: 10px;
   font-size: 26px;
 }
 
 .task-description {
   font-size: 16px;
+  color: #999999;
 }
 
 .tasks {
@@ -121,11 +125,17 @@
   border: solid #40404b 2px;
   font-size: 18px;
   min-width: 180px;
+  color: #e5e4e4;
 }
 .save-task:hover {
   filter: brightness(1.1);
   scale: 1.1;
   cursor: pointer;
+}
+
+.newTaskInfo label {
+  color: #e5e4e4;
+  margin-bottom: 9px;
 }
 
 .bin-icon {
