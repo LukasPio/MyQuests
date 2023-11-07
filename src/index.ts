@@ -9,15 +9,22 @@ function newTask(): Task {
   const taskDescription: string =
     // @ts-ignore
     document.querySelector("#task-description").value;
-
-  const newTask: Task = {
-    name: taskName,
-    taskDescription: taskDescription,
-  };
-
-  if (!(newTask.name && newTask.taskDescription)) {
-    alert("Two camps must be completed!");
-    throw new Error("Two camps must be completed!");
+  let newTask: Task;
+  if (!taskName) {
+    alert("Task name must be filled!");
+    throw new Error("Task name must be filled!");
+  }
+  if (taskName && !taskDescription) {
+    newTask = {
+      name: taskName,
+      taskDescription: taskName,
+    };
+    if (taskName && taskDescription) {
+      newTask = {
+        name: taskName,
+        taskDescription: taskDescription,
+      };
+    }
   }
   // @ts-ignore
   document.querySelector("#task-description").value = "";

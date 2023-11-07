@@ -210,6 +210,9 @@
   #task-description {
     width: 200px;
   }
+  #task-description-label {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
